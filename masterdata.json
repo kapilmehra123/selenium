@@ -1,0 +1,1188 @@
+{
+  "isTimeout": 30000,
+  "execution": [
+    {
+      "time_series_chart": [
+        {
+          "verification": [
+            {
+              "month": [
+                "Monday, Nov 13. 2023",
+                "Tuesday, Nov 14. 2023",
+                "Wednesday, Nov 15. 2023",
+                "Thursday, Nov 16. 2023",
+                "Friday, Nov 17. 2023",
+                "Saturday, Nov 18. 2023",
+                "Sunday, Nov 19. 2023",
+                "Monday, Nov 20. 2023",
+                "Tuesday, Nov 21. 2023",
+                "Wednesday, Nov 22. 2023",
+                "Thursday, Nov 23. 2023",
+                "Friday, Nov 24. 2023",
+                "Saturday, Nov 25. 2023",
+                "Sunday, Nov 26. 2023",
+                "Monday, Nov 27. 2023",
+                "Tuesday, Nov 28. 2023",
+                "Wednesday, Nov 29. 2023",
+                "Thursday, Nov 30. 2023",
+                "Friday, Dec 1. 2023",
+                "Saturday, Dec 2. 2023",
+                "Sunday, Dec 3. 2023",
+                "Monday, Dec 4. 2023",
+                "Tuesday, Dec 5. 2023",
+                "Wednesday, Dec 6. 2023",
+                "Thursday, Dec 7. 2023",
+                "Friday, Dec 8. 2023",
+                "Saturday, Dec 9. 2023",
+                "Sunday, Dec 10. 2023",
+                "Monday, Dec 11. 2023",
+                "Tuesday, Dec 12. 2023"
+              ],
+              "all_conv_rate": [
+                "564.22",
+                "457.5",
+                "476.98",
+                "479.43",
+                "556.82",
+                "512.62",
+                "615.16",
+                "500.01",
+                "600.24",
+                "984.29",
+                "1,133.73",
+                "1,007.88",
+                "1,415.94",
+                "984.45",
+                "826.18",
+                "667.85",
+                "980.6",
+                "840.48",
+                "747.04",
+                "323.33",
+                "544.44",
+                "747.62",
+                "1,131.39",
+                "761.04",
+                "1,407.29",
+                "1,119.62",
+                "1,170.67",
+                "1,088.41",
+                "829.76",
+                "250"
+              ]
+            }
+          ]
+        }
+      ],
+      "coloum_and_bar_chart": [
+        {
+          "verification": [
+            {
+              "verify_adName": [
+                "v3-video-teaser-9.16",
+                "v3-video-teaser-9.16",
+                "Headline 3 - Variation 1 - 728 x 90.jpg",
+                "Headline 3 - Variation 1 - 728 x 90.jpg",
+                "Headline 3 - Variation 1 - 300 x 600.jpg",
+                "Headline 3 - Variation 1 - 300 x 600.jpg",
+                "Headline 4 - Variation 1 - 300 x 600.jpg",
+                "Headline 4 - Variation 1 - 300 x 600.jpg",
+                "Headline 4 - Variation 1 - 728 x 90.jpg",
+                "Headline 4 - Variation 1 - 728 x 90.jpg",
+                "v3-teaser-video",
+                "v3-teaser-video",
+                "Headline 1 - Variation 1 - 728 x 90.jpg"
+              ],
+              "verify_operation": [
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE",
+                "AVERAGE"
+              ],
+              "verify_ctr": ["1.493", "1.493", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            }
+          ]
+        }
+      ],
+      "line_plot_chart": [
+        {
+          "verification": [
+            {
+              "verify_operation": [
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM",
+                "SUM"
+              ],
+              "verify_cost_conv": [
+                "43.52",
+                "1,003.73",
+                "455.41",
+                "165.49",
+                "63.05",
+                "82.17",
+                "17.57",
+                "17.03",
+                "16.33",
+                "16.81",
+                "0",
+                "0",
+                "0",
+                "12.25",
+                "0",
+                "10.66"
+              ],
+              "verify_conversions": [
+                "0 - 1",
+                "1 - 2",
+                "2 - 3",
+                "3 - 4",
+                "4 - 5",
+                "5 - 6",
+                "6 - 7",
+                "7 - 8",
+                "8 - 9",
+                "9 - 10",
+                "10 - 11",
+                "11 - 12",
+                "12 - 13",
+                "13 - 14",
+                "14 - 15",
+                "15 - 16"
+              ]
+            }
+          ]
+        }
+      ],
+      "scorecard_chart": [
+        {
+          "verification": [
+            {
+              "verify_clicks_scorecard": "4,545",
+              "verify_avg_cpc_scorecard": "$ 1,621.14"
+            }
+          ]
+        }
+      ],
+      "bubble_chart": [
+        {
+          "verification": [
+            {
+              "verify_ad_strength": [0, 4, 5, 6],
+              "verify_cost": ["599", "766", "1,150", "4,046"],
+              "verify_clicks": ["1,650", "265", "617", "2,013"],
+              "verify_All_conv": ["57", "4,494", "6,541", "13,157"]
+            }
+          ]
+        }
+      ],
+      "pie_chart": [
+        {
+          "verification": [
+            {
+              "verify_display": "88 (100%)",
+              "verify_video": "72 (100%)",
+              "verify_search": "1,235 (100%)"
+            }
+          ]
+        }
+      ],
+      "data_table": [
+        {
+          "verification": [
+            {
+              "verify_date": [
+                "2023-12-4",
+                "2023-11-29",
+                "2023-11-21",
+                "2023-12-2",
+                "2023-12-1",
+                "2023-11-18",
+                "2023-11-17",
+                "2023-12-12",
+                "2023-12-9",
+                "2023-11-29",
+                "2023-11-18",
+                "2023-12-11",
+                "2023-11-30",
+                "2023-12-9",
+                "2023-12-12",
+                "2023-12-5",
+                "2023-12-7",
+                "2023-11-27",
+                "2023-11-17",
+                "2023-12-3",
+                "2023-11-25",
+                "2023-11-13",
+                "2023-11-16",
+                "2023-11-20",
+                "2023-11-24"
+              ],
+              "campaign_name": [
+                "Display - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Search - NonBrand - eCommerce - US - [Exact]",
+                "Display - Remarketing - US",
+                "Search - NonBrand - eCommerce - US - [Exact]",
+                "YouTube: Video Views - Branding - US",
+                "Display - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Search - NonBrand - eCommerce - US - [Exact] | maxConversions",
+                "Display - Remarketing - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Search - NonBrand - eCommerce - US - [Exact]",
+                "YouTube: Conversions - Ecommerce - US",
+                "Search - NonBrand - eCommerce - US - [Exact] | maxConversions",
+                "Search - NonBrand - eCommerce - US - [Exact]",
+                "Search - NonBrand - Business Intelligence - EU - [Broad]",
+                "Search - NonBrand - eCommerce - US - [Exact] | maxConversions",
+                "Display - US",
+                "YouTube: Video Views - Branding - US",
+                "Search - NonBrand - eCommerce - US - [Exact] | maxConversions",
+                "Display - US",
+                "Display - US",
+                "Search - NonBrand - eCommerce - US - [Exact] | maxConversions"
+              ],
+              "bid_strategy": [
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "TARGET_SPEND",
+                "TARGET_SPEND",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "TARGET_SPEND",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "TARGET_SPEND",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS",
+                "MAXIMIZE_CONVERSIONS"
+              ],
+              "conv_rate": [
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%",
+                "0%"
+              ],
+              "cost_all_conv": [
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0",
+                "$ 0"
+              ]
+            }
+          ]
+        }
+      ],
+      "pivot_table": [
+        {
+          "verification": [
+            {
+              "verify_adname_and_impression": [
+                "Headline 1 - Variation 1 - 300 x 600.jpg",
+                "Headline 1 - Variation 1 - 728 x 90.jpg",
+                "Headline 2 - Variation 1 - 300 x 600.jpg",
+                "Headline 2 - Variation 1 - 468 x 60.jpg",
+                "Headline 2 - Variation 1 - 728 x 90.jpg",
+                "Headline 3 - Variation 1 - 300 x 600.jpg",
+                "Headline 3 - Variation 1 - 728 x 90.jpg",
+                "Headline 4 - Variation 1 - 300 x 600.jpg",
+                "Headline 4 - Variation 1 - 468 x 60.jpg",
+                "Headline 4 - Variation 1 - 728 x 90.jpg",
+                "video-ai_powered-spreadsheets",
+                "v3-teaser-video",
+                "v3-video-teaser",
+                "v3-video-teaser-9.16"
+              ],
+              "total": [4, 6, 10, 4, 6, 4, 1, 5, 3, 6, 4, 4, 31, 31]
+            }
+          ]
+        }
+      ],
+      "outilers_table": [
+        {
+          "verification": [
+            {
+              "verify_ctr_percentage": ["5,259.62%", "1,089.95%", "93.87%"],
+              "verify_ad_type": [15, "", 30],
+              "verify_compaign_type": ["SEARCH", "VIDEO", "49"],
+              "verify_records": [935, 62],
+              "verify_outlier_percentage": ["382.6", "", "-91.4"],
+              "bottom_outler_percentage": ["91.4", "-100", "-100"]
+            }
+          ]
+        }
+      ],
+      "roi_calculator": [
+        {
+          "verification": [
+            {
+              "verify_impressions": ["129,453", "49,030", "825"],
+              "verify_cost": ["$ 592.67", "$ 303.47", "$ 6.73"],
+              "verify_roi_percentage": [
+                "21,842.30%",
+                "16,156.50%",
+                "12,258.50%"
+              ],
+              "verify_ad_type": [30, 19, 29],
+              "verify_compaign_type": ["VIDEO", "DISPLAY", "VIDEO"],
+              "verify_records": [62, 63, 8],
+              "total_impression": "44,988",
+              "total_cost": "$ 5,658.1",
+              "total_roi_percentage": "795.10%",
+              "total_ad_type": 15,
+              "total_compaign_type": "SEARCH",
+              "total_records": "935"
+            }
+          ]
+        }
+      ],
+      "data_summary": [
+        {
+          "verification": [
+            {
+              "rows": "1118",
+              "coloumns": "36",
+              "date_range": "12 Nov 2023 - 12 Dec 2023",
+              "verify_coloumns_name": [
+                "Date",
+                "Conv. Rate",
+                "Campaign Id",
+                "Campaign Name",
+                "Campaign Type",
+                "Bid Strategy",
+                "Adgroup Name",
+                "Adgroup Id",
+                "Ad Id",
+                "Ad Name",
+                "Ad Type",
+                "Final Url",
+                "Mobile Final Url",
+                "Final Url Suffix",
+                "Device Preference",
+                "Tracking Template",
+                "Ad Strength",
+                "Custom Parameter",
+                "Video",
+                "Campaign Group",
+                "Ad Image Url",
+                "Impressions",
+                "Clicks",
+                "Avg. Cpc",
+                "Ctr",
+                "All Conv.",
+                "Cost / All Conv.",
+                "All Conv. Rate",
+                "All Conv. Value",
+                "Conversions",
+                "Conv. Value",
+                "Cost / Conv.",
+                "Views",
+                "Avg. Cpv",
+                "View Rate"
+              ],
+              "verify_coloums_data_type": [
+                "Date",
+                "Percentage",
+                "String",
+                "String",
+                "String",
+                "String",
+                "String",
+                "String",
+                "String",
+                "String",
+                "Number",
+                "URL",
+                "String",
+                "String",
+                "Number",
+                "String",
+                "Number",
+                "String",
+                "String",
+                "String",
+                "URL",
+                "Number",
+                "Number",
+                "Currency",
+                "Percentage",
+                "Number",
+                "Currency",
+                "Percentage",
+                "Number",
+                "Number",
+                "Number",
+                "Currency",
+                "Number",
+                "Currency",
+                "Percentage"
+              ],
+              "verify_title": [
+                "The date on which the performance data was recorded.",
+                "The conversion rate, calculated as the number of conversions divided by the number of clicks.",
+                "The unique identifier for each campaign.",
+                "The name of the campaign.",
+                "The type of campaign.",
+                "The strategy used for bidding on ads in the campaign.",
+                "The name of the adgroup.",
+                "The unique identifier for each adgroup.",
+                "The unique identifier for each ad.",
+                "The name of the ad.",
+                "The type of ad.",
+                "The final URL that users are directed to when they click on the ad.",
+                "The final URL for mobile devices.",
+                "The suffix added to the final URL.",
+                "The preference for a specific device.",
+                "The template used for tracking ad performance.",
+                "The strength of the ad.",
+                "The custom parameter used in the ad.",
+                "Indicates whether the ad is a video ad.",
+                "The group to which the campaign belongs.",
+                "The URL of the ad image.",
+                "The number of times the ad was shown.",
+                "The number of times the ad was clicked.",
+                "The average cost per click.",
+                "The click-through rate, calculated as the number of clicks divided by the number of impressions.",
+                "The total number of conversions.",
+                "The cost per conversion.",
+                "The conversion rate, calculated as the number of conversions divided by the number of impressions.",
+                "The total value of all conversions.",
+                "The number of conversions.",
+                "The value of conversions.",
+                "The cost per conversion.",
+                "The number of views for video ads.",
+                "The average cost per view for video ads.",
+                "The view rate for video ads."
+              ]
+            }
+          ]
+        }
+      ],
+      "verify_funnel": [
+        {
+          "verification": [
+            {
+              "campaign_name": 13,
+              "percentage": "100.00%"
+            }
+          ]
+        }
+      ],
+      "verify_scatter": [
+        {
+          "verification": [
+            {
+              "device_preference": [0, 0, 0, 0],
+              "ad_strength": [0, 4, 5, 6],
+              "ctr": ["5% - 5.5%", "8% - 8.5%", "8% - 8.5%", "8% - 8.5%"]
+            }
+          ]
+        }
+      ],
+      "verify_grid": [
+        {
+          "verification": [
+            {
+              "verify_date": [
+                "2023-11-15",
+                "2023-11-13",
+                "2023-11-26",
+                "2023-11-18",
+                "2023-11-13",
+                "2023-11-17",
+                "2023-11-14",
+                "2023-11-25",
+                "2023-11-22",
+                "2023-11-28",
+                "2023-11-26",
+                "2023-11-24",
+                "2023-11-16",
+                "2023-12-4",
+                "2023-11-23",
+                "2023-11-27",
+                "2023-11-12",
+                "2023-11-18",
+                "2023-11-27",
+                "2023-11-21",
+                "2023-11-19",
+                "2023-12-11",
+                "2023-11-30",
+                "2023-11-28",
+                "2023-11-29",
+                "2023-11-14",
+                "2023-11-15",
+                "2023-11-30",
+                "2023-11-16",
+                "2023-12-10",
+                "2023-12-8",
+                "2023-11-17",
+                "2023-11-20",
+                "2023-11-29",
+                "2023-12-2",
+                "2023-11-20",
+                "2023-12-8",
+                "2023-11-22",
+                "2023-12-9",
+                "2023-12-2",
+                "2023-12-1",
+                "2023-12-10",
+                "2023-12-8",
+                "2023-11-16",
+                "2023-12-1",
+                "2023-12-2",
+                "2023-11-13",
+                "2023-11-27"
+              ],
+              "verify_campaign_name": [
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Display - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Display - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Display - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Display - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Display - Remarketing - US",
+                "Display - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Display - Remarketing - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Display - Remarketing - US",
+                "Display - Remarketing - US",
+                "Display - Remarketing - US",
+                "Display - Remarketing - US",
+                "Display - Remarketing - US"
+              ],
+              "verify_clicks": [
+                55,
+                63,
+                8,
+                39,
+                38,
+                27,
+                62,
+                65,
+                66,
+                77,
+                43,
+                67,
+                18,
+                13,
+                62,
+                70,
+                40,
+                14,
+                9,
+                34,
+                26,
+                16,
+                78,
+                21,
+                17,
+                34,
+                7,
+                17,
+                47,
+                7,
+                14,
+                68,
+                19,
+                11,
+                51,
+                12,
+                14,
+                21,
+                10,
+                26,
+                9,
+                14,
+                22,
+                16,
+                17,
+                11
+              ],
+              "verify_avg_cpc": [
+                "$ 0.39",
+                "$ 0.26",
+                "$ 0.64",
+                "$ 0.53",
+                "$ 0.25",
+                "$ 0.67",
+                "$ 0.28",
+                "$ 0.34",
+                "$ 0.34",
+                "$ 0.26",
+                "$ 0.45",
+                "$ 0.33",
+                "$ 0.93",
+                "$ 0.41",
+                "$ 0.35",
+                "$ 0.29",
+                "$ 0.23",
+                "$ 0.34",
+                "$ 0.43",
+                "$ 0.62",
+                "$ 0.81",
+                "$ 0.35",
+                "$ 0.25",
+                "$ 0.17",
+                "$ 0.3",
+                "$ 0.24",
+                "$ 0.6",
+                "$ 0.15",
+                "$ 0.19",
+                "$ 0.75",
+                "$ 0.58",
+                "$ 0.11",
+                "$ 0.1",
+                "$ 0.71",
+                "$ 0.07",
+                "$ 0.51",
+                "$ 0.63",
+                "$ 0.23",
+                "$ 0.28",
+                "$ 0.23",
+                "$ 0.47",
+                "$ 0.26",
+                "$ 0.71",
+                "$ 0.07",
+                "$ 0.35",
+                "$ 0.58",
+                "$ 0.12",
+                "$ 0.16",
+                "$ 0.44",
+                "$ 0.47",
+                "$ 0.26",
+                "$ 0.32"
+              ],
+              "verify_cost": [
+                "$ 21.6",
+                "$ 16.4",
+                "$ 5",
+                "$ 20.8",
+                "$ 9.5",
+                "$ 18.1",
+                "$ 17.6",
+                "$ 22.3",
+                "$ 22.1",
+                "$ 20.2",
+                "$ 19.2",
+                "$ 22.3",
+                "$ 16.7",
+                "$ 5.3",
+                "$ 21.3",
+                "$ 20.4",
+                "$ 9.1",
+                "$ 4.7",
+                "$ 3.8",
+                "$ 21.1",
+                "$ 21.1",
+                "$ 5.5",
+                "$ 19.3",
+                "$ 3.6",
+                "$ 21.7",
+                "$ 8.1",
+                "$ 4.2",
+                "$ 2.5",
+                "$ 8.9",
+                "$ 5.2",
+                "$ 8.1",
+                "$ 7.4",
+                "$ 20.8",
+                "$ 1.2",
+                "$ 8.2",
+                "$ 5.2",
+                "$ 5",
+                "$ 4.8",
+                "$ 4.9",
+                "$ 5.1",
+                "$ 5.3",
+                "$ 4.5",
+                "$ 5.8"
+              ]
+            }
+          ]
+        }
+      ],
+      "verify_rich_text": [
+        {
+          "verification": [
+            {
+              "rich_text": "Verification of the rich text"
+            }
+          ]
+        }
+      ],
+      "verify_header": [
+        {
+          "verification": [
+            {
+              "header_title": "Cost Checking",
+              "header_description": "verification of the header"
+            }
+          ]
+        }
+      ],
+      "verify_correlations": [
+        {
+          "verification": [
+            {
+              "positive_correlation": [
+                "0.93",
+                "0.13",
+                "0.11",
+                "0.61",
+                "0.65",
+                "0.15",
+                "0.21",
+                "0.21",
+                "0.07",
+                "0.37",
+                "0.18",
+                "0.15",
+                "0.1",
+                "0.13",
+                "0.07"
+              ]
+            }
+          ]
+        }
+      ],
+      "verify_heat_map": [
+        {
+          "verification": [
+            {
+              "campaign_name": [
+                "YouTube: Conversions - Ecommerce - US",
+                "YouTube: Conversions - Ecommerce - US",
+                "Display - Remarketing - US",
+                "Display - Remarketing - US",
+                "Search - NonBrand - Business Intelligence - US,UK,CA - [Exact]",
+                "Search - NonBrand - Business Intelligence - US,UK,CA - [Exact]",
+                "Search - NonBrand - Business Intelligence - EU - [Broad]",
+                "Search - NonBrand - Business Intelligence - EU - [Broad]",
+                "Search - NonBrand - eCommerce - US - [Exact]",
+                "Search - NonBrand - eCommerce - US - [Exact]",
+                "Search - NonBrand - Business Intelligence - US,UK,CA - [Exact]",
+                "Search - NonBrand - Business Intelligence - US,UK,CA - [Exact]",
+                "Search - NonBrand - Business Intelligence - US,UK,CA - [Exact]"
+              ],
+              "value": ["11.39", "11.39", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            }
+          ]
+        }
+      ],
+      "verify_gallery": [
+        {
+          "verification": [
+            {
+              "ad_name": [
+                "v3-video-teaser",
+                "v3-video-teaser",
+                "v3-video-teaser",
+                "v3-video-teaser-9.16",
+                "v3-video-teaser",
+                "v3-video-teaser-9.16",
+                "v3-video-teaser",
+                "v3-video-teaser"
+              ],
+              "image_url": [
+                "https://cdn.pixabay.com",
+                "https://media.istockphoto.com",
+                "https://cdn1.vectorstock.com",
+                "https://cdn.pixabay.com",
+                "https://img.freepik.com",
+                "https://encrypted-tbn0.gstatic.com",
+                "https://www.shutterstock.com",
+                "https://img.freepik.com"
+              ],
+              "text_for_link": [
+                "visit on this link",
+                "visit on this link",
+                "visit on this link",
+                "visit on this link",
+                "visit on this link",
+                "visit on this link",
+                "visit on this link",
+                "visit on this link"
+              ]
+            }
+          ]
+        }
+      ],
+      "daily_data_overview_ga4_report": [
+        {
+          "verification": [
+            {
+              "coloum_name": [
+                "Average Session Duration",
+                "Bounce Rate",
+                "Engagement Rate",
+                "Session Conversion Rate",
+                "Bounced Sessions",
+                "Sessions With Conversions",
+                "Total Time Spent",
+                "Date",
+                "Sessions",
+                "Total Users",
+                "New Users",
+                "Engaged Sessions",
+                "Conversions"
+              ],
+              "data_type": [
+                "Custom Metric",
+                "Custom Metric",
+                "Custom Metric",
+                "Custom Metric",
+                "Number",
+                "Number",
+                "Number",
+                "Date",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Number"
+              ],
+              "title": [
+                "Date of the recorded data.",
+                "Number of sessions.",
+                "Total number of users.",
+                "Number of new users.",
+                "Number of engaged sessions.",
+                "Number of conversions."
+              ]
+            }
+          ]
+        }
+      ],
+      "verify_acquisition_overview_report": [
+        {
+          "verification": [
+            {
+              "coloum_name": [
+                "Bounce Rate",
+                "Pages / Session",
+                "Session Conversion Rate",
+                "Session Duration",
+                "Bounced Sessions",
+                "Views",
+                "Total Time Spent",
+                "Sessions With Conversions",
+                "Date",
+                "Session Default Channel Group",
+                "Session Source / Medium",
+                "Session Source",
+                "City",
+                "Country",
+                "Device Category",
+                "Total Users",
+                "New Users",
+                "Sessions",
+                "Conversions",
+                "Transactions"
+              ],
+              "data_type": [
+                "Custom Metric",
+                "Custom Metric",
+                "Custom Metric",
+                "Custom Metric",
+                "Custom Metric",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Date",
+                "String",
+                "String",
+                "URL",
+                "String",
+                "String",
+                "String",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Number"
+              ],
+              "title": [
+                "Date of the recorded data.",
+                "Default channel grouping during a session.",
+                "Source and medium combination in a session.",
+                "Source of a session.",
+                "City where the activity occurred.",
+                "Country where the activity occurred.",
+                "Category of the device (e.g., mobile, desktop).",
+                "Total number of users.",
+                "Number of new users.",
+                "Number of sessions.",
+                "Number of conversions.",
+                "Number of transactions."
+              ]
+            }
+          ]
+        }
+      ],
+      "verify_behaviour_landing_report": [
+        {
+          "verification": [
+            {
+              "coloum_name": [
+                "Bounce Rate",
+                "Pages / Session",
+                "Session Conversion Rate",
+                "Session Duration",
+                "Bounced Sessions",
+                "Views",
+                "Total Time Spent",
+                "Sessions With Conversions",
+                "Date",
+                "Landing Page + Query String",
+                "City",
+                "Country",
+                "Device Category",
+                "Session Source",
+                "Session Medium",
+                "Session Source / Medium",
+                "Views",
+                "Sessions",
+                "User Engagement (Seconds)",
+                "New Users",
+                "Transactions"
+              ],
+              "data_type": [
+                "Custom Metric",
+                "Custom Metric",
+                "Custom Metric",
+                "Custom Metric",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Date",
+                "String",
+                "String",
+                "String",
+                "String",
+                "URL",
+                "String",
+                "String",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Number"
+              ],
+              "title": [
+                "Date of the recorded data.",
+                "Landing page URL with query string.",
+                "City where the activity occurred.",
+                "Country where the activity occurred.",
+                "Category of the device (e.g., mobile, desktop).",
+                "Source of a session.",
+                "Medium during a session.",
+                "Source and medium combination in a session.",
+                "Number of views.",
+                "Number of sessions.",
+                "User engagement duration in seconds.",
+                "Number of new users.",
+                "Number of transactions."
+              ]
+            }
+          ]
+        }
+      ],
+      "verify_google_ads_comapaign_keyword_report": [
+        {
+          "verification": [
+            {
+              "coloum_name": [
+                "word report",
+                "Bounce Rate",
+                "Pages / Session",
+                "Session Conversion Rate",
+                "Bounced Sessions",
+                "Views",
+                "Sessions With Conversions",
+                "Session Google Ads Campaign",
+                "Session Google Ads Keyword Text",
+                "Device Category",
+                "Date",
+                "Ads Clicks",
+                "Ads Cost",
+                "Ads Cost Per Click",
+                "Total Users",
+                "Sessions",
+                "Conversions"
+              ],
+              "data_type": [
+                "rd report",
+                "Custom Metric",
+                "Custom Metric",
+                "Custom Metric",
+                "Number",
+                "Number",
+                "Number",
+                "String",
+                "String",
+                "String",
+                "Date",
+                "Number",
+                "Currency",
+                "Currency",
+                "Number",
+                "Number",
+                "Number"
+              ],
+              "title": [
+                "Category of the device (e.g., mobile, desktop).",
+                "Date of the recorded data.",
+                "Number of clicks on ads.",
+                "Cost of ads.",
+                "Cost per click for ads.",
+                "Total number of users.",
+                "Number of sessions.",
+                "Number of conversions."
+              ]
+            }
+          ]
+        }
+      ],
+      "verify_google_ads_search_queries_report": [
+        {
+          "verification": [
+            {
+              "coloum_name": [
+                "report",
+                "Bounce Rate",
+                "Session Conversion Rate",
+                "Bounced Sessions",
+                "Sessions With Conversions",
+                "Google Ads Query",
+                "Device Category",
+                "Date",
+                "Ads Clicks",
+                "Ads Cost",
+                "Ads Cost Per Click",
+                "Total Users",
+                "Sessions",
+                "Conversions"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

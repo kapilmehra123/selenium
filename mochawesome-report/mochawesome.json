@@ -1,0 +1,262 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 1,
+    "pending": 0,
+    "failures": 7,
+    "start": "2024-03-20T15:59:51.987Z",
+    "end": "2024-03-20T16:00:23.008Z",
+    "duration": 31021,
+    "testsRegistered": 8,
+    "passPercent": 12.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fe9a2390-feb4-4f8f-ab75-5a3d98c6f19b",
+      "title": "",
+      "fullFile": "/home/hp/Downloads/polymer/main/index.js",
+      "file": "/main/index.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+          "title": "login page",
+          "fullFile": "/home/hp/Downloads/polymer/main/index.js",
+          "file": "/main/index.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login the page",
+              "fullTitle": "login page login the page",
+              "timedOut": false,
+              "duration": 10232,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "log(':starting login the page')\nawait driver.manage().window().maximize();\nlog(':sstep 2')\nawait driver.get(baseUrl);\nlog(':step 3')\nlog(':step 3a')\nconst emailElementLocator = By.xpath(\"//input[@id='email']\");\n// maxRetries = 4\n// timeout = 30000ms\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(email);\n}, emailElementLocator, 4, 1000);\nconst passwordElementLocator = By.xpath(\"//input[@id='password']\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(pass);\n}, passwordElementLocator);\nconst loginButtonLocator = By.xpath(\"//button[@class='btn-md btn-black btn group/btn']\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, loginButtonLocator);\nawait driver.navigate().refresh();\nlog(':step 4')",
+              "err": {},
+              "uuid": "862ad3cc-7e64-422e-a1d4-00ac37204ef5",
+              "parentUUID": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Upload a csv file",
+              "fullTitle": "login page Upload a csv file",
+              "timedOut": false,
+              "duration": 9521,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "log(':step 5:starting Upload a csv file')\n//click on nav bar icon\nlet clickicon = By.xpath(\"(//button[@class='btn polymer-navbar-link'])[1]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickicon, 4, 2000);\n//upload file\nlet uploadfile = filePath;\nconsole.log(':uploadfile', uploadfile);\n// just wait for the Add New Data Source button to appear before proceeding\nawait actionWithRetry(driver, async function (element) {}, By.xpath(\"//span[text()=' Add New Data Source ']\"), 4, 1500);\nlog(':step 6:traverse the loop to get the csv name from the popup')\n//traverse the loop to get the csv name from the popup\nconst elements = await driver.findElements(By.xpath(\"(//div[@class='dataset-name w-5/12 font-medium text-sm leading-4 text-black cursor-pointer'])\"));\nlet getText;\nfor (let i = 0; i < elements.length; i++) {\n  const element = elements[i];\n  try {\n    await driver.wait(until.elementIsVisible(element), isTimeout);\n    getText = await element.getText();\n  } catch (err1) {\n    console.log(\"error on upload popup\", err1)\n  }\n  console.log(':getText', getText);\n  console.log(':fileName', fileName);\n  //if the csv name matched\n  if (getText === fileName) {\n    log(':file exists, deleting file and uploading file')\n    //click on action\n    let clickaction = By.xpath(`(//div[@class='caret-wrapper ml-2'])[${i+1}]`);\n    log(':step 7a:click on action')\n    await actionWithRetry(driver, async function (element) {\n      await element.click();\n    }, clickaction);\n    //click on delete button to delete the csv file\n    let deletecsv = By.xpath(\"(//span[text()='Delete'])[3]\");\n    log(':step 7b:click on delete button')\n    await actionWithRetry(driver, async function (element) {\n      await element.click();\n    }, deletecsv);\n    //confirm to delete \n    let confirmdelete = By.xpath(\"//button[text()=' Yes, Delete Source']\");\n    log(':step 7c:confiem to delete source')\n    await actionWithRetry(driver, async function (element) {\n      await element.click();\n    }, confirmdelete);\n    //click on to add data source button\n    let clickaddnewsourcedata = By.xpath(\"//span[text()=' Add New Data Source ']\");\n    log(':step 7d:Click on add new data source')\n    await actionWithRetry(driver, async function (element) {\n      await element.click();\n    }, clickaddnewsourcedata, 6, 3000);\n    log(':step 7e:uploading the file')\n    driver.findElement(By.xpath(\"(//input[@type='file'])[2]\")).sendKeys(uploadfile);\n    break;\n  } else {\n    log('step 8:enter the else condintion and uploading file')\n    //file upload\n    let clickaddnewsourcedata = By.xpath(\"//span[text()=' Add New Data Source ']\");\n    await actionWithRetry(driver, async function (element) {\n      await element.click();\n    }, clickaddnewsourcedata);\n    await driver.sleep(2000);\n    driver.findElement(By.xpath(\"(//input[@type='file'])[2]\")).sendKeys(uploadfile);\n    console.log(':file uploading done');\n    break;\n  }\n}",
+              "err": {
+                "message": "Error: Action failed after 4 attempts",
+                "estack": "Error: Action failed after 4 attempts\n    at actionWithRetry (main/loadfile.js:51:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (main/index.js:67:7)",
+                "diff": null
+              },
+              "uuid": "8e8e9f8a-8f00-4f0a-8560-b9b1f5f21444",
+              "parentUUID": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create time series",
+              "fullTitle": "login page Create time series",
+              "timedOut": false,
+              "duration": 11191,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "log(':starting Create time series')\nawait driver.sleep(4000);\ntry {\n  let test = await driver.wait(until.elementIsVisible(driver.findElement(By.xpath(\"//h3[text()='Add your data source']\"))), 30000).getText();\n  log(\"after test\")\n  // sometimes add data popup shows even after data upload\n  if (test == \"Add your data source\") {\n    log(\"step14:enter the close condition\")\n    let closepopup = By.xpath(\"//div[@class='polymer-close-icon']\")\n    await actionWithRetry(driver, async function (element) {\n      await element.click();\n    }, closepopup, 3, 10000);\n  } else {\n    log(\"step14: enter the else close condition\")\n  }\n} catch (error) {\n  console.log(\"dd your data source error\", error)\n}\nlog(':after')\n// wait until Suggested Insights shows up\nawait actionWithRetry(driver, async function (element) {}, By.xpath(\"//div[text()='Suggested Insights']\"), 4, 3000);\n\nlog(':step 8')\n//click on add icon\nlet clickadd = By.xpath(\"(//div[@class='v-popper v-popper--theme-dropdown'])[1]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickadd);\n//click on time series\nlet clickontimeseries = By.xpath(\"//button[text()=' Time Series']\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickontimeseries);\n//click on the record count\nlet clickonyaxis = By.xpath(\"(//div[@class='multiselect__tags'])[2]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickonyaxis);\n//send y axis value\nlet sendxaxis = By.xpath(\"(//input[@type='text'])[2]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(\"All Conv. Rate\")\n}, sendxaxis);\nlet selectxaxis = By.xpath(\"(//input[@type='text'])[2]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(Key.ENTER)\n}, selectxaxis);\nawait driver.sleep(2000);\nlet close = By.xpath(\"//button[@class='ml-1.5']\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, close);",
+              "err": {
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)\n    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async thenableWebDriverProxy.findElements (node_modules/selenium-webdriver/lib/webdriver.js:1089:17)",
+                "diff": null
+              },
+              "uuid": "89d97066-382e-4ff9-a282-61f7ebc776ba",
+              "parentUUID": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "traverse the graph",
+              "fullTitle": "login page traverse the graph",
+              "timedOut": false,
+              "duration": 6,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "log(':starting traverse the graph')\nconst chartelements = \"(//*[local-name()='svg']//*[name()='g' and @class='highcharts-markers highcharts-series-1 highcharts-line-series highcharts-tracker' ]//*)\"\nfor (let m = 2; m <= 32; m++) {\n  const elements = await driver.findElements(By.xpath(`${chartelements}[${m}]`));\n  await driver.actions().move({\n    origin: elements[0]\n  }).perform();\n}",
+              "err": {
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)\n    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async thenableWebDriverProxy.findElements (node_modules/selenium-webdriver/lib/webdriver.js:1089:17)\n    at async Context.<anonymous> (main/index.js:199:26)",
+                "diff": null
+              },
+              "uuid": "b800ce62-5c7b-4a93-9cda-3899a8dfc9e3",
+              "parentUUID": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify the timeseries data",
+              "fullTitle": "login page verify the timeseries data",
+              "timedOut": false,
+              "duration": 16,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "log(':starting verify the timeseries data')\nconst chartelements = \"(//*[local-name()='svg']//*[name()='g' and @class='highcharts-markers highcharts-series-1 highcharts-line-series highcharts-tracker' ]//*)\"\nlet text = \"//div[@class='inline-flex px-3 py-2 text-black flex-col drop-shadow-big font-normal']\"\nfor (let m = 2; m <= 32; m++) {\n  const elements = await driver.findElements(By.xpath(`${chartelements}[${m}]`));\n  await driver.actions().move({\n    origin: elements[0]\n  }).perform();\n  await driver.sleep(100);\n  let test = await driver.findElement(By.xpath(text)).getText();\n  //  let test = await driver.wait(until.elementIsVisible(driver.findElement(By.xpath(text))), isTimeout).getText();\n  console.log(\"testing\", test);\n  const extractedText = test.split('\\n')[0].trim();\n  console.log(\"Extracted text:\", extractedText);\n  const startIndex = test.indexOf(\"All Conv. Rate: \") + \"All Conv. Rate: \".length;;\n  const actual_conv_rate = test.substring(startIndex);\n  const actual_month_data = extractedText\n  console.log(\"actual_conv_rate\", actual_conv_rate)\n  for (let n = 0; n < item.time_series_chart[0].verification[0].month.length; n++) {\n    if (extractedText === item.time_series_chart[0].verification[0].month[n]) {\n      console.log(\"inside the loop\")\n      await driver.sleep(10);\n      //verify month,day,year\n      const expected_month_data = item.time_series_chart[0].verification[0].month[n]\n      assert.equal(expected_month_data, actual_month_data);\n      //verify the conv rate\n      const expected_conv_rate = item.time_series_chart[0].verification[0].all_conv_rate[n]\n      assert.equal(expected_conv_rate, actual_conv_rate);\n      // wait for 20ms before iterating next item\n      await driver.sleep(20);\n      break;\n    }\n  }\n}",
+              "err": {
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)\n    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async thenableWebDriverProxy.findElements (node_modules/selenium-webdriver/lib/webdriver.js:1089:17)\n    at async Context.<anonymous> (main/index.js:213:29)",
+                "diff": null
+              },
+              "uuid": "2e9ee1b3-3111-44f9-a7c4-b94c654b2622",
+              "parentUUID": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "create coloumn and bar chart",
+              "fullTitle": "login page create coloumn and bar chart",
+              "timedOut": false,
+              "duration": 11,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "log(':create coloumn and bar chart')\n//click on add icon\nlet clickadd = By.xpath(\"(//div[@class='v-popper v-popper--theme-dropdown'])[1]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickadd);\n//click on time series\nlet clickontimeseries = By.xpath(\"//button[text()=' Column & Bar Chart']\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickontimeseries);\n//click on the record count\nlet clickonxaxis = By.xpath(\"(//div[@class='multiselect__tags'])[2]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickonxaxis);\n//send x axis value\nlet sendxaxis = By.xpath(\"(//input[@type='text'])[2]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(\"Ad Name\")\n}, sendxaxis);\nlet selectxaxis = By.xpath(\"(//input[@type='text'])[2]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(Key.ENTER)\n}, selectxaxis);\n//send y axis\nlet clickonyaxis = By.xpath(\"(//div[@class='multiselect__tags'])[3]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickonyaxis);\nlet sendyaxis = By.xpath(\"(//input[@type='text'])[3]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(\"Ctr\")\n}, sendyaxis);\nlet selectyaxis = By.xpath(\"(//input[@type='text'])[3]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(Key.ENTER)\n}, selectyaxis);\n//send the avg \nlet clickonsendavg = By.xpath(\"(//div[@class='multiselect__tags'])[4]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, clickonsendavg);\nlet selectavg = By.xpath(\"(//input[@type='text'])[4]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(\"Avg\")\n}, selectavg);\nlet clickavg = By.xpath(\"(//input[@type='text'])[4]\");\nawait actionWithRetry(driver, async function (element) {\n  await element.sendKeys(Key.ENTER)\n}, clickavg);\nawait driver.sleep(2000);\nlet close = By.xpath(\"//button[@class='ml-1.5']\");\nawait actionWithRetry(driver, async function (element) {\n  await element.click();\n}, close);",
+              "err": {
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)\n    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async thenableWebDriverProxy.findElements (node_modules/selenium-webdriver/lib/webdriver.js:1089:17)",
+                "diff": null
+              },
+              "uuid": "0c7462a8-4a1a-4b87-912a-42bcf4757b28",
+              "parentUUID": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "traverse the graph",
+              "fullTitle": "login page traverse the graph",
+              "timedOut": false,
+              "duration": 18,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "log(':starting traverse the graph of coloum and bar chart')\nconst chartelements = \"(//*[local-name()='svg']//*[name()='g' and @class='highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0 highcharts-tracker' ]//*)\"\nfor (let m = 1; m <= 14; m++) {\n  const elements = await driver.findElements(By.xpath(`${chartelements}[${m}]`));\n  await driver.actions().move({\n    origin: elements[0]\n  }).perform();\n}",
+              "err": {
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)\n    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async thenableWebDriverProxy.findElements (node_modules/selenium-webdriver/lib/webdriver.js:1089:17)\n    at async Context.<anonymous> (main/index.js:308:29)",
+                "diff": null
+              },
+              "uuid": "53951d50-be29-46b1-95db-a2aaedf81a25",
+              "parentUUID": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify the coloum and bar chart data",
+              "fullTitle": "login page verify the coloum and bar chart data",
+              "timedOut": false,
+              "duration": 7,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "log(':starting to verify the coloum and bar chart data')\nconst chartelements = \"(//*[local-name()='svg']//*[name()='g' and @class='highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0 highcharts-tracker' ]//*)\"\nlet text = \"(//div[@class='inline-flex px-3 py-2 text-black flex-col drop-shadow-big font-normal'])[2]\"\nfor (let m = 2; m <= 14; m++) {\n  const elements = await driver.findElements(By.xpath(`${chartelements}[${m}]`));\n  await driver.actions().move({\n    origin: elements[0]\n  }).perform();\n  await driver.sleep(100);\n  let test = await driver.findElement(By.xpath(text)).getText();\n  console.log(\"testing\", test)\n  const startCtrIndex = test.indexOf(\"Ctr: \") + \"Ctr: \".length;;\n  const actual_ctr_value = test.substring(startCtrIndex);\n  const startOperationIndex = test.indexOf(\"Operation: \") + \"Operation: \".length;\n  const endOperationIndex = test.indexOf(\"\\n\", startOperationIndex);\n  const actual_operation_name = test.substring(startOperationIndex, endOperationIndex).trim();\n  const startIndex = test.indexOf(\"Ad Name: \") + \"Ad Name: \".length;\n  const endIndex = test.indexOf(\"\\n\", startIndex);\n  const actual_ad_name = test.substring(startIndex, endIndex).trim();\n  console.log(\"actual_ad_name\", actual_ad_name)\n  for (let n = 0; n < item.coloum_and_bar_chart[0].verification[0].verify_adName.length; n++) {\n    if (actual_ad_name === item.coloum_and_bar_chart[0].verification[0].verify_adName[n]) {\n      console.log(\"inside the loop\")\n      await driver.sleep(10);\n      //verify ad name data\n      const expected_ad_name = item.coloum_and_bar_chart[0].verification[0].verify_adName[n]\n      assert.equal(expected_ad_name, actual_ad_name);\n      //verify the operation\n      const expected_operation_name = item.coloum_and_bar_chart[0].verification[0].verify_operation[n]\n      assert.equal(expected_operation_name, actual_operation_name);\n      //verify ctr\n      const expected_ctr_value = item.coloum_and_bar_chart[0].verification[0].verify_ctr[n]\n      assert.equal(expected_ctr_value, actual_ctr_value);\n      await driver.sleep(20);\n      break;\n    }\n  }\n}",
+              "err": {
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=121.0.6167.184)\n    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:524:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:601:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async thenableWebDriverProxy.execute (node_modules/selenium-webdriver/lib/webdriver.js:745:17)\n    at async thenableWebDriverProxy.findElements (node_modules/selenium-webdriver/lib/webdriver.js:1089:17)\n    at async Context.<anonymous> (main/index.js:320:29)",
+                "diff": null
+              },
+              "uuid": "0dbcdb82-eba3-4df0-ae46-bd8c8256fa7d",
+              "parentUUID": "391b0c4e-dbdc-4b7a-a9a3-c17ce531892a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "862ad3cc-7e64-422e-a1d4-00ac37204ef5"
+          ],
+          "failures": [
+            "8e8e9f8a-8f00-4f0a-8560-b9b1f5f21444",
+            "89d97066-382e-4ff9-a282-61f7ebc776ba",
+            "b800ce62-5c7b-4a93-9cda-3899a8dfc9e3",
+            "2e9ee1b3-3111-44f9-a7c4-b94c654b2622",
+            "0c7462a8-4a1a-4b87-912a-42bcf4757b28",
+            "53951d50-be29-46b1-95db-a2aaedf81a25",
+            "0dbcdb82-eba3-4df0-ae46-bd8c8256fa7d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 31002,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
